@@ -59,7 +59,7 @@ public class BaseEntity {
 	 * Cannot be null.
 	 * </p>
 	 */
-	@Column(name = "created_by", nullable = false)
+	@Column(name = "created_by_user_id", nullable = false)
 	protected Long createdBy;
 	
 	/**
@@ -69,7 +69,7 @@ public class BaseEntity {
 	 * Cannot be null.
 	 * </p>
 	 */
-	@Column(name = "updated_by", nullable = false)
+	@Column(name = "updated_by_user_id", nullable = false)
 	protected Long updatedBy;
 	
 	/**
