@@ -26,7 +26,7 @@ public class Offer extends BaseEntity {
      */
     @Pattern(regexp = "^[^/?,<>\\:*|\"^]*",
             message = "Following characters: /?,<>\\:*|\"^ are not allowed")
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String code;
 
     /**

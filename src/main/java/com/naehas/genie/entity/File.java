@@ -52,7 +52,7 @@ public class File extends BaseEntity {
     private boolean active = true;
 
 
-    @Column(nullable = false)
+    @Column
     private String subdirectory;
 
     /**
@@ -63,9 +63,7 @@ public class File extends BaseEntity {
      * </p>
      */
     @ManyToOne
-    @JoinColumn(name = "parent_file_id", nullable = false)
+    @JoinColumn(name = "parent_file_id")
     @JsonBackReference
     private File parentFile;
-
-
 }

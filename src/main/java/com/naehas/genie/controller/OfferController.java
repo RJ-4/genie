@@ -1,8 +1,9 @@
 package com.naehas.genie.controller;
 
-import com.naehas.genie.constant.service.offer.OfferService;
-import com.naehas.genie.dto.request.offer.OfferRequestDTO;
-import com.naehas.genie.dto.response.offer.OfferResponseDTO;
+import com.naehas.genie.dto.request.OfferRequestDTO;
+import com.naehas.genie.dto.response.OfferResponseDTO;
+import com.naehas.genie.service.OfferService;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

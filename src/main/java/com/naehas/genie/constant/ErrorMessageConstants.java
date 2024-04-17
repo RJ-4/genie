@@ -73,6 +73,14 @@ public interface ErrorMessageConstants {
 	 */
 	String ERROR_STEP_TEMPLATE_ID_NOT_EXISTS = "error.step.template.id.not-exists";
 	
+	
+	/**
+	 * If an Offer with the same name already exists.
+	 * 
+	 */
+	String ERROR_OFFER_TYPE_ID_NOT_EXISTS = "error.offer.type.not-exists";
+	
+	
 	/**
 	 * If an Offer with the same name already exists.
 	 * 
@@ -84,6 +92,12 @@ public interface ErrorMessageConstants {
 	 *
 	 */
 	String ERROR_FILE_ALREADY_EXISTS = "error.file.already-exists";
+	
+	/**
+	 * If a File with id does not exist.
+	 *
+	 */
+	String ERROR_FILE_ID_NOT_EXISTS = "error.file.not-exists";
 	
 	/**
 	 * If user facing status already exists.

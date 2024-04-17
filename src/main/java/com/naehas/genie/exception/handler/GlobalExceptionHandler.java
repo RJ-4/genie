@@ -1,23 +1,28 @@
 package com.naehas.genie.exception.handler;
 
-import com.naehas.genie.exception.*;
-import com.naehas.genie.exception.handler.response.ErrorResponse;
-import com.naehas.genie.exception.util.ExceptionUtils;
-import jakarta.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Locale;
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
-import org.springframework.http.HttpHeaders;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.naehas.genie.exception.EntityNotFoundException;
+import com.naehas.genie.exception.FileNotFoundException;
+import com.naehas.genie.exception.InvalidInputException;
+import com.naehas.genie.exception.SystemException;
+import com.naehas.genie.exception.UniqueConstraintException;
+import com.naehas.genie.exception.handler.response.ErrorResponse;
+import com.naehas.genie.exception.util.ExceptionUtils;
+
+import jakarta.validation.ConstraintViolationException;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 

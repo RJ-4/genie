@@ -1,8 +1,9 @@
 package com.naehas.genie.controller;
 
-import com.naehas.genie.constant.service.file.FileService;
-import com.naehas.genie.dto.request.file.FileRequestDTO;
-import com.naehas.genie.dto.response.file.FileResponseDTO;
+import com.naehas.genie.service.FileService;
+import com.naehas.genie.dto.request.FileRequestDTO;
+import com.naehas.genie.dto.response.FileResponseDTO;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
