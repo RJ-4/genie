@@ -1,9 +1,10 @@
-package com.naehas.genie.dto.request.common;
+package com.naehas.genie.dto.request;
 
 import com.naehas.genie.constant.ApplicationConstants;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.io.Serializable;
@@ -28,6 +29,9 @@ import lombok.*;
 public class UserRequestDTO implements Serializable {
 
     private static final long serialVersionUID = -760869534945024079L;
+    
+    @NotNull(message = "User id cannot be null")
+    private Long id;
 
     @NotBlank(message = "Name is required")
     @Size(max = ApplicationConstants.MYSQL_MAX_VARCHAR_LENGTH,

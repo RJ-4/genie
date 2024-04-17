@@ -1,6 +1,6 @@
 package com.naehas.genie.mapper;
 
-import com.naehas.genie.dto.request.common.UserRequestDTO;
+import com.naehas.genie.dto.request.UserRequestDTO;
 import com.naehas.genie.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

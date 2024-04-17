@@ -1,6 +1,6 @@
 package com.naehas.genie.service;
 
-import com.naehas.genie.dto.request.common.UserRequestDTO;
+import com.naehas.genie.dto.request.UserRequestDTO;
 import com.naehas.genie.dto.response.UserResponseDTO;
 import com.naehas.genie.entity.User;
 import com.naehas.genie.exception.EntityNotFoundException;

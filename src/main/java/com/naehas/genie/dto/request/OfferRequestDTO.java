@@ -30,6 +30,9 @@ import lombok.*;
 public class OfferRequestDTO implements Serializable {
 
     private static final long serialVersionUID = -3119767856538893351L;
+    
+    @NotNull(message = "Offer id cannot be null")
+    private Long id;
 
     @NotBlank(message = "Offer code is required")
     @Size(max = ApplicationConstants.MYSQL_MAX_VARCHAR_LENGTH,

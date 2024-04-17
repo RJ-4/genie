@@ -30,6 +30,9 @@ import lombok.*;
 public class FileRequestDTO implements Serializable {
 
     private static final long serialVersionUID = -3119767856538893351L;
+    
+    @NotNull(message = "File id cannot be null")
+    private Long id;
 
     @NotBlank(message = "File name is required")
     @Size(max = ApplicationConstants.MYSQL_MAX_VARCHAR_LENGTH,

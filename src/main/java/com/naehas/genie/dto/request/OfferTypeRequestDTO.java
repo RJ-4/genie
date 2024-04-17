@@ -31,6 +31,9 @@ public class OfferTypeRequestDTO implements Serializable {
 
     private static final long serialVersionUID = -8236316321441520338L;
 
+    @NotNull(message = "Offer type id cannot be null")
+    private Long id;
+    
     @NotBlank(message = "Offer code is required")
     @Size(max = ApplicationConstants.MYSQL_MAX_VARCHAR_LENGTH,
             message = "Number of characters cannot be more than" + ApplicationConstants.MYSQL_MAX_VARCHAR_LENGTH)

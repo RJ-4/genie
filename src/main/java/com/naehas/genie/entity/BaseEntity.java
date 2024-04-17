@@ -1,11 +1,19 @@
 package com.naehas.genie.entity;
 
-import jakarta.persistence.*;
 import java.time.LocalDateTime;
-import lombok.*;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.envers.Audited;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * Class which contains common fields to be used across other entities.
@@ -42,7 +50,6 @@ public class BaseEntity {
 	 */
 	@Id
 	@Column
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
 	
 	/**
